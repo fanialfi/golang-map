@@ -6,8 +6,8 @@ import (
 
 func main() {
 	// deklarasi map
-	var chicken1 map[byte]string
-	chicken1 = map[byte]string{} // digunakan untuk inisialisasi nilai map dengan nilainya default dari type nya
+	// var chicken1 map[byte]string
+	chicken1 := map[byte]string{} // digunakan untuk inisialisasi nilai map dengan nilainya default dari type nya
 
 	chicken2 := map[byte]string{}
 	chicken3 := make(map[byte]string)
@@ -98,13 +98,13 @@ func main() {
 
 	{
 		var days = []map[byte]string{
-			map[byte]string{1: "senin", 0: "hari kerja"},
-			map[byte]string{2: "selasa", 0: "hari kerja"},
-			map[byte]string{3: "rabu", 0: "hari kerja"},
-			map[byte]string{4: "kamis", 0: "hari kerja"},
-			map[byte]string{5: "jumat", 0: "hari kerja"},
-			map[byte]string{6: "sabtu", 0: "hari kerja"},
-			map[byte]string{7: "minggu", 0: "hari libur"},
+			{1: "senin", 0: "hari kerja"},
+			{2: "selasa", 0: "hari kerja"},
+			{3: "rabu", 0: "hari kerja"},
+			{4: "kamis", 0: "hari kerja"},
+			{5: "jumat", 0: "hari kerja"},
+			{6: "sabtu", 0: "hari kerja"},
+			{7: "minggu", 0: "hari libur"},
 		}
 
 		for i, element := range days {
